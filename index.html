@@ -345,34 +345,59 @@
     </div>
 </footer>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop " data-modal>
     <div class="modal">
         <button data-modal-close class="modal-btn" type="button">
-            <svg class="backdrop-icon" width="11px" height="11px">
+            <svg class="off-icon" width="11px" height="11px">
                 <use href="./image/icons.svg#icon-vector"></use>
             </svg></button>
+
+        <form class="form js-speacker-form" autocomlete="0ff">
+            
+            <label class="form-fild">
+                <input class="form-input" tape="text" name="name"  placeholder="" />
+                <span class="form-label">Ім'я</span>
+            <svg class="form-icon" width="18px" height="18px">
+                <use href="./image/icons.svg#icon-person"></use>
+            </svg>
+            </label>
+          
+            <label class="form-fild">
+                <input class="form-input" tape="tel" name="tel"  placeholder=""  />
+                <span class="form-label">Телефон</span>
+                <svg class="form-icon" width="18px" height="18px">
+                    <use href="./image/icons.svg#icon-phone"></use>
+                </svg>
+            </label>
+
+            <label class="form-fild">
+                <input class="form-input" tape="email" name="mail" placeholder="" />
+                <span class="form-label">Пошта</span>
+                <svg class="form-icon" width="18px" height="18px">
+                    <use href="./image/icons.svg#icon-email"></use>
+                </svg>
+            </label>
+
+        
+        <div class="form-fild">
+            <label for="comment" class="form-label">Коментар</label>
+            <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введіть текст" ></textarea>
+            </div>
+            
+            <br />
+
+            <input type="checkbox" name="" value="" id="policy" />
+            <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
+        <br />
+            <button type="submit">Відправити</button>
+        <br />
+        
+        
+        </form>
     </div>
 </div>
 
-<form class="js-speacker-form">
-    <label for="name">Ім'я</label>
-    <input tape="text" name="name" id="name" />
-    <br />
-    <label for="tel">Телефон</label>
-    <input tape="tel" name="tel" id="tel" />
-    <br />
-    <label for="mail">Пошта</label>
-    <input tape="email" name="mail" id="mail" />
-    <br />
-    <label for="">Коментар</label>
-    <input tape="text" name="" id="" />
-    <br />
-    
-    <button type="submit">Відправити</button>
 
-
-
-</form>
 
 
 <script src="./js/modal.js"></script>
