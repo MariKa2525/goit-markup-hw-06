@@ -339,20 +339,36 @@
                         </svg></a>
                 </li>
             </ul>
-
-
         </div>
+
+        <div class="email-input">
+            <div class="email-input-item">
+            <p class="email-input-text">Підпишіться на розсилку</p>
+            <div class="email-input-footer">
+            <label class="email-input-label">
+                E-mail
+                <input class="email-input-input" type="email" name="email" />
+            </label></div></div>
+            <button  type="button" name="button" class="email-input-btn">Підписатися <svg class="off-icon" width="24px" height="24px">
+                <use href="./image/icons.svg#icon-icon-send"></use>
+            </svg></button>
+        </div>
+
     </div>
 </footer>
 
-<div class="backdrop " data-modal>
+<!-- Backdrop -->
+
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button data-modal-close class="modal-btn" type="button">
             <svg class="off-icon" width="11px" height="11px">
                 <use href="./image/icons.svg#icon-vector"></use>
             </svg></button>
 
-        <form class="form js-speacker-form" autocomlete="0ff">
+            <span class="text-form">Залиште свої дані, ми вам передзвонимо</span>
+
+        <form class="form" autocomlete="0ff">
             
             <label class="form-fild">
                 <input class="form-input" tape="text" name="name"  placeholder="" />
@@ -378,24 +394,32 @@
                 </svg>
             </label>
 
-        
-        <div class="form-fild">
-            <label for="comment" class="form-label">Коментар</label>
-            <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введіть текст" ></textarea>
-            </div>
-            
-            <br />
+            <label class="form-fild">
+                <textarea class="form-textarea" name="comment" rows="5" placeholder="Введіть текст" ></textarea>
+                <span class="laber-comment">Коментар</span>
+            </label>
+           
+            <div class="form-chekbox"> 
+            <label class="checkbox-label">
+                <input class="checkbox-input" type="checkbox" type="checkbox" name="topic" 
+                value="check" />
+                <span class="checkbox-icon"></span>
+               <span class="label-check-text">Погоджуюся з розсилкою та приймаю <a class="contract-check" href="#Умови договору">Умови договору</a></span>
+            </label>
+        </div>
 
-            <input type="checkbox" name="" value="" id="policy" />
-            <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-        <br />
-            <button type="submit">Відправити</button>
-        <br />
+        <div class="btn"> 
+            <button type="button" name="button" class="form-btn">Відправити</button>
+</div>
+         
         
         
         </form>
+        
     </div>
 </div>
+
+
 
 
 
