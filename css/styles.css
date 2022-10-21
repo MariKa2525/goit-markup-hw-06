@@ -890,7 +890,12 @@ text-transform: uppercase;
 }
 
 .email-input-btn {
-    
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     width: 200px;
     height: 50px;
     margin-left: 12px;
@@ -909,6 +914,8 @@ text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
 }
+
+
 
  /* ---------Модальне вікно-----  */
 
